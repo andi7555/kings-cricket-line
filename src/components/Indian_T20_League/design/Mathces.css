@@ -1,0 +1,302 @@
+/* --- Variables for consistency ---
+:root {
+    --card-bg: #2b2b2b; 
+    --text-color-light: #f0f0f0; 
+    --text-color-dark: #b0b0b0; 
+    --border-radius: 15px; 
+    --padding: 20px; 
+    --gap: 15px; 
+    --accent-color: #6a0dad; 
+} */
+
+/* --- General App/Body Styling (can be in index.css or App.css) --- */
+/* body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1a1a1a; 
+    color: var(--text-color-light);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+} */
+
+.matches-section {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    align-items: center;
+    width: auto;
+    max-width: 900px; 
+    gap: 30px;
+    padding: 20px;
+    background-color: #1f1f1f; 
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+    margin: 20px auto; 
+}
+
+.matches-title {
+    color:white;
+    text-align: center;
+    margin-bottom: 0; 
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+.matches-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 20px; 
+    width: 100%;
+    border-radius: 20px;
+    width: auto;
+
+}
+
+/* --- Individual Match Card Styling --- */
+.match-card {
+
+    background-color: #2b2b2b;
+    border-radius: 15px;
+    padding: var(--padding); 
+    width: 100%;
+    max-width: 400px; 
+    height: 170px;
+    color: var(--text-color-light);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    
+
+}
+
+.match-card:hover {
+    transform: scale(1.05); 
+}
+
+/* Header Section (Date, Time, Match Info) */
+.match-card .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; 
+    margin-bottom: var(--gap);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    padding-bottom: 10px;
+}
+
+.match-card .header .time-date {
+    font-size: 0.9em;
+    color: var(--text-color-dark);
+}
+
+.match-card .header .match-info {
+    font-size: 0.9em;
+    color: var(--text-color-dark);
+    text-align: right;
+    font-weight: bold;
+}
+
+/* Teams and VS Indicator Section */
+.match-card .teams-score {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    width: 100%;
+    margin-bottom: var(--gap);
+    gap: 25px; 
+}
+
+.match-card .team {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    flex: 1; 
+    text-align: center;
+}
+
+.match-card .team-logo {
+    width: 60px; 
+    height: 60px;
+    border-radius: 50%; 
+    border: 3px solid rgba(255, 255, 255, 0.3); 
+    margin-bottom: 8px;
+    object-fit: contain; 
+    background-color: #f8f8f8; 
+    padding: 2px; 
+}
+
+.match-card .team-name {
+    font-weight: bold;
+    font-size: 1.5em; 
+    color: var(--text-color-light);
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    max-width: 100%; 
+}
+
+.match-card .vs-indicator {
+    font-size: 1.8em; 
+    font-weight: bold;
+    color: var(--text-color-dark);
+    margin: 0 15px; 
+}
+
+/* Footer Section (Location) */
+.match-card .footer {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    width: 100%;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    padding-top: 10px;
+    margin-top: var(--gap);
+}
+
+.match-card .footer .location {
+    font-size: 0.85em;
+    color: var(--text-color-dark);
+    display: flex;
+    text-align: center;
+    max-width: 90%; 
+}
+
+/* --- Media Queries for Responsiveness --- */
+
+/* For screens smaller than 768px (e.g., tablets in portrait, large phones) */
+@media (max-width: 768px) {
+    .matches-section {
+        padding: 15px;
+        gap: 25px;
+    }
+
+    .matches-title {
+        font-size: 2em;
+    }
+
+    .matches-container {
+        gap: 15px;
+    }
+
+    .match-card {
+        max-width: 350px; 
+        padding: 18px;
+    }
+
+    .match-card .header .time-date,
+    .match-card .header .match-info {
+        font-size: 0.8em; 
+    }
+
+    .match-card .team-logo {
+        width: 55px;
+        height: 55px;
+    }
+
+    .match-card .team-name {
+        font-size: 1.3em;
+    }
+
+    .match-card .vs-indicator {
+        font-size: 1.6em;
+        margin: 0 10px;
+    }
+
+    .match-card .footer .location {
+        font-size: 0.8em;
+    }
+}
+
+/* For screens smaller than 480px (e.g., most mobile phones) */
+@media (max-width: 480px) {
+    body {
+        padding: 10px; 
+    }
+
+    .matches-section {
+        padding: 10px;
+        gap: 20px;
+    }
+
+    .matches-title {
+        font-size: 1.8em;
+    }
+
+    .matches-container {
+        flex-direction: column; 
+        align-items: center; 
+        gap: 15px;
+    }
+
+    .match-card {
+        max-width: 95%;
+        padding: 15px;
+        border-radius: 12px; 
+    }
+
+    .match-card .header {
+        flex-direction: column; 
+        align-items: flex-start; 
+        gap: 5px;
+    }
+
+    .match-card .header .match-info {
+        text-align: left; 
+    }
+
+    .match-card .teams-score {
+        gap: 15px; 
+    }
+
+    .match-card .team-logo {
+        width: 45px;
+        height: 45px;
+        border-width: 2px; 
+    }
+
+    .match-card .team-name {
+        font-size: 1.1em;
+    }
+
+    .match-card .vs-indicator {
+        font-size: 1.3em;
+        margin: 0 8px;
+    }
+
+    .match-card .footer .location {
+        font-size: 0.75em;
+        max-width: 100%; 
+    }
+}
+
+/* For very small screens (e.g., iPhone SE/old phones) */
+@media (max-width: 320px) {
+    .matches-title {
+        font-size: 1.5em;
+    }
+
+    .match-card .header .time-date,
+    .match-card .header .match-info,
+    .match-card .footer .location {
+        font-size: 0.7em;
+    }
+
+    .match-card .team-name {
+        font-size: 1em;
+    }
+
+    .match-card .vs-indicator {
+        font-size: 1.1em;
+    }
+}

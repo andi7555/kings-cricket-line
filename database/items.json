@@ -1,0 +1,44 @@
+[
+ 
+  {
+    "id": "match1",
+    "team1": "India",
+    "team2": "Australia",
+    "score1": "180/4 (20 ov)",
+    "score2": "165/8 (20 ov)",
+    "status": "Match Finished",
+    "result": "India won by 15 runs",
+    "venue": "Wankhede Stadium, Mumbai"
+  },
+  {
+    "id": "match2",
+    "team1": "England",
+    "team2": "New Zealand",
+    "score1": "120/2 (10.3 ov)",
+    "score2": "-",
+    "status": "Live",
+    "result": "England needs 40 runs in 57 balls",
+    "venue": "Lord's, London"
+  },
+  {
+    "id": "match3",
+    "team1": "Pakistan",
+    "team2": "South Africa",
+    "score1": "95/5 (15 ov)",
+    "score2": "-",
+    "status": "Live",
+    "result": "South Africa needs 60 runs in 30 balls",
+    "venue": "Gaddafi Stadium, Lahore"
+  },
+  {
+    "id": "match4",
+    "team1": "West Indies",
+    "team2": "Sri Lanka",
+    "score1": "150/7 (20 ov)",
+    "score2": "120/4 (18 ov)",
+    "status": "Live",
+    "result": "Sri Lanka needs 31 runs in 12 balls",
+    "venue": "Pallekele International Cricket Stadium, Kandy"
+  }
+
+]

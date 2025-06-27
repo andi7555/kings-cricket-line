@@ -1,0 +1,363 @@
+
+/* 
+.ipl-squads-container {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  max-width: auto;
+  margin: 0 auto;
+  background-color: black;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  border: 2px solid #67fac2 ;
+  margin-bottom: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: aqua;
+  margin-bottom: 30px;
+  font-size: 2.5em;
+   font-family: 'Acherus Militant 1', sans-serif;
+}
+
+.team-section {
+  margin-bottom: 40px;
+  background-color: black;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.team-section h2 {
+  color: #67fac2;
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 2em;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+   font-family: 'Acherus Militant 1', sans-serif;
+}
+
+.players-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+.player-card {
+  background-color: black;
+  border: 1px solid aqua;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.player-card:hover {
+  transform: rotateY(180deg);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  
+}
+
+.player-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border: 1px solid aqua;
+}
+
+.player-name {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: white;
+  margin: 5px 0;
+}
+
+.player-position {
+  font-size: 0.9em;
+  color: white;
+  margin: 0;
+}  */
+
+/* Responsive Design */
+
+/* For screens smaller than 768px (e.g., tablets) */
+ /* @media (max-width: 768px) {
+  .players-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+  }
+
+  .player-card {
+    padding: 10px;
+  }
+
+  .player-image {
+    width: 80px;
+    height: 80px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  .team-section h2 {
+    font-size: 1.8em;
+  }
+}  */
+
+/* For screens smaller than 480px (e.g., mobile phones) */
+ /* @media (max-width: 480px) {
+  .players-grid {
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    gap: 10px;
+  }
+
+  .player-card {
+    padding: 8px;
+  }
+
+  .player-image {
+    width: 70px;
+    height: 70px;
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+
+  .team-section h2 {
+    font-size: 1.6em;
+  }
+
+  .player-name {
+    font-size: 1em;
+  }
+
+  .player-position {
+    font-size: 0.8em;
+  }
+} 
+
+
+ */
+
+
+ .ipl-squads-container {
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+  background-color: black;
+  color: #333;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: rgb(96, 250, 202); 
+  margin-bottom: 40px;  
+  font-size: 2.5em;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+.team-section {
+  background-color: black;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  padding: 20px;
+}
+
+.team-section h2 {
+  color: aqua ; /* IPL Blue */
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 2em;
+  border-bottom: 2px solid #56f7cf;
+  padding-bottom: 10px;
+  font-family: 'Acherus Militant 1', sans-serif;
+}
+
+.players-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+  justify-content-items: center;
+}
+
+/* Flip Card Container */
+.player-card {
+  width: 250px;
+  height: 350px; /* Increased height for better content display */
+  perspective: 1000px; /* Establishes 3D perspective */
+  
+}
+
+/* Inner card that flips */
+.player-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.7s; /* Smooth flip animation */
+  transform-style: preserve-3d; /* Preserve 3D space for children */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 15px;
+  border: 1px solid #56f7cf ;
+  
+}
+
+/* Flip the card on hover */
+.player-card:hover .player-card-inner {
+  transform: rotateY(180deg);
+  
+
+}
+
+/* Front and Back of the card */
+.player-card-front,
+.player-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Hide back of the card during flip */
+  backface-visibility: hidden;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.player-card-front {
+  background: linear-gradient(135deg, black, black);
+  color: #333;
+  border-radius: 20px;
+  background-image: 'src\assets\GT.jpg';
+
+
+}
+
+.player-card-back {
+  background: linear-gradient(135deg, black); 
+  color: white;
+  transform: rotateY(180deg); 
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; 
+  text-align: left;
+  padding-left: 25px; 
+  border-radius: 20px;
+  
+}
+
+.player-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 1px solid #56f7cf; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.player-name {
+  font-size: 1.5em;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.player-position {
+  font-size: 1em;
+  color: #ffff;
+}
+
+/* Back Card Data */
+.player-data-item {
+  font-size: 0.95em;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  margin-bottom: auto;
+  margin-top: auto;
+}
+
+
+.player-data-item strong {
+  margin-right: 8px;
+  color: #64fac0; /* Gold for emphasis */
+
+}
+
+.Player-data-item button{
+  align-items: center;
+  text-align: auto;
+  height: 35px;
+  width: 90px ;
+  border-radius: 10px;
+  background-color: black;
+  border: 1px solid #64fac0;
+  color: white;
+  display: flex;
+  cursor: pointer;
+}
+
+.Player-data-item a{
+  text-decoration: none;
+  text-align: center;
+}
+.Player-data-item button:hover{
+  background-color: #64fac0;
+  color: #333;
+  align-content: center;
+}
+
+/* Responsive tablets */
+@media (max-width: 768px) {
+  .players-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+  .player-card {
+    width: 200px;
+    height: 300px;
+  }
+  .player-image {
+    width: 120px;
+    height: 120px;
+  }
+  .player-name {
+    font-size: 1.3em;
+  }
+  .player-position {
+    font-size: 0.9em;
+  }
+}
+
+/*Responsive mobile */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2em;
+  }
+  .team-section h2 {
+    font-size: 1.8em;
+  }
+  .players-grid {
+    grid-template-columns: 1fr;
+  }
+  .player-card {
+    width: 90%;
+    margin: 0 auto;
+  }
+}

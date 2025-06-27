@@ -1,0 +1,220 @@
+/* 
+.calendar-container {
+  padding: 40px;
+  padding-top: 80px;
+  text-align: center;
+  background-color: #f5f5f5; 
+  min-height: calc(100vh - 100px);
+  border-radius: 20px;
+  margin-top: 20px;
+  gap: 20px;
+  justify-content: space-evenly;
+}
+
+.calendar-container h1 {
+  font-size: 2.8em;
+  color: #28a745; 
+  margin-bottom: 20px;
+   font-family: 'Acherus Militant 1', sans-serif;
+}
+
+.calendar-container p {
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.match-schedule {
+  display: flex;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.match-card {
+  background-color: #ffffff;
+  border-left: 5px solid #28a745; 
+  border-right: 5px solid #28a745;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: left;
+  transition: transform scale(0.2s) ease, box-shadow 0.2s ease;
+  width: 100%;
+  max-width: 350px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+
+}
+
+.match-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.match-card h3 {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.match-card p {
+  font-size: 1em;
+  color: #666;
+  margin-bottom: 5px;
+
+}
+
+.match-card strong {
+  color: #007bff; 
+} */
+
+
+/* <!----------------Responsive design --------------!> */
+
+/* Base styles - these apply to all screen sizes */
+.calendar-container {
+  padding: 40px;
+  padding-top: 80px;
+  text-align: center;
+  background-color: #f5f5f5;
+  min-height: calc(100vh - 100px);
+  border-radius: 20px;
+  margin-top: 20px;
+  gap: 20px;
+  /* Removed justify-content: space-evenly; as it might not be ideal for all flex layouts */
+}
+
+.calendar-container h1 {
+  font-size: 2.8em;
+  color: #28a745;
+  margin-bottom: 20px;
+  font-family: 'Acherus Militant 1', sans-serif;
+}
+
+.calendar-container p {
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.match-schedule {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap to the next line */
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  justify-content: center; /* Center cards when they wrap */
+}
+
+.match-card {
+  background-color: #ffffff;
+  border-left: 5px solid #28a745;
+  border-right: 5px solid #28a745;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: left;
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Corrected transition property */
+  width: 100%; /* Default to full width for smaller screens */
+  max-width: 350px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.match-card:hover {
+  transform: scale(1.03); /* Slightly reduced scale for better visual on hover */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.match-card h3 {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.match-card p {
+  font-size: 1em;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.match-card strong {
+  color: #007bff;
+}
+
+/* --- Media Queries for Responsiveness --- */
+
+/* For screens smaller than 768px (e.g., tablets and large phones) */
+@media (max-width: 767px) {
+  .calendar-container {
+    padding: 20px;
+    padding-top: 60px;
+  }
+
+  .calendar-container h1 {
+    font-size: 2em;
+  }
+
+  .calendar-container p {
+    font-size: 1em;
+  }
+
+  .match-schedule {
+    flex-direction: column; /* Stack cards vertically on smaller screens */
+    align-items: center; /* Center stacked cards */
+  }
+
+  .match-card {
+    max-width: 90%; /* Take up more width on smaller screens */
+    height: auto; /* Allow height to adjust based on content */
+    margin-bottom: 20px; /* Add space between stacked cards */
+  }
+}
+
+/* For screens smaller than 480px (e.g., mobile phones) */
+@media (max-width: 480px) {
+  .calendar-container {
+    padding: 15px;
+    padding-top: 40px;
+    margin-bottom: 10px;
+  }
+
+  .calendar-container h1 {
+    font-size: 1.8em;
+  }
+
+  .calendar-container p {
+    font-size: 0.9em;
+  }
+
+  .match-card {
+    padding: 15px;
+  }
+
+  .match-card h3 {
+    font-size: 1.3em;
+  }
+
+  .match-card p {
+    font-size: 0.9em;
+  }
+}
+
+/* For larger screens (desktops) - typically handled by base styles, but you can add specific adjustments if needed */
+@media (min-width: 992px) {
+  .match-schedule {
+    justify-content: space-evenly; /* Distribute cards evenly on larger screens */
+  }
+
+  .match-card {
+    width: 30%; /* Adjust width for a three-column layout on larger screens */
+    max-width: 300px; /* Keep max-width reasonable */
+  }
+}

@@ -1,0 +1,105 @@
+.peregraph-wrapper{
+    background-color: black;
+    color: white;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-indent: 50px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    
+
+}
+.peregraph-wrapper p{
+    padding-bottom: 30px;
+    text-align-last: left;
+    font-family:'Poppins', 'Poppins Fallback', sans-serif;
+    margin: 50px;
+    padding-left: 50px;
+    padding-right: 5pxx;
+}
+
+.heding{
+    padding-top: 30px;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.para-con{
+    font-size: 17px;
+    text-indent: 50px;
+    margin-bottom: 30px;
+    color: white;
+    text-size-adjust: 14px;
+    width: auto;
+    height: auto;
+     text-align-last: left;
+    font-family: sans-serif;
+    text-align-last: initial;
+}
+
+.paregraph-cont h2{
+    margin-bottom: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: medium;
+}
+
+.heding-con{
+    margin-bottom: 40px;
+    font-size: 20px;
+}
+
+.para-con p{
+    padding-right: 50px;
+}
+
+@media (max-width: 768px) {
+    .para-con p{
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .heding-con{
+        font-size: 18px;
+    }
+    .paregraph-cont h2{
+        font-size: 16px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .peregraph-wrapper p{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .para-con p{
+        padding-right: 10px;
+        padding-left: 10px;
+         line-height: 0.7;
+
+    }
+    .heding-con{
+        font-size: 16px;
+    }
+    .heding h1{
+        align-items: center;
+        flex-direction: column;
+    }
+    .paregraph-cont h2{
+        font-size: 12px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin: 10px;
+        font-margin: 10px;
+        text-align: center;
+        font-family: 'Poppins', 'Poppins Fallback', sans-serif;
+        
+    }
+    .peregraph-wrapper p{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+}

@@ -1,0 +1,99 @@
+.series-container {
+  padding: 40px;
+  text-align: center;
+  background-color: #f0f8ff; /* Light blue background */
+  border-radius: 20px;
+  margin-top: 20px;
+  width: auto;
+}
+
+.series-container h1 {
+  font-size: 2.8em;
+  color: #0056b3;
+  margin-bottom: 20px;
+   font-family: 'Acherus Militant 1', sans-serif;
+}
+
+.series-container p {
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+
+
+.series-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.series-item {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  text-align: left;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.series-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.series-item h3 {
+  font-size: 1.8em;
+  color: #333;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.series-item p {
+  font-size: 1em;
+  color: #666;
+  margin-bottom: 5px;
+  line-height: 1.5;
+}
+
+.series-item img{
+  width: 200px;
+  height: 200px;  
+  display: block;
+  margin: 0 auto;
+  border-radius: 100px;
+  margin-bottom: 15px;
+}
+
+.series-item button{
+  align-items: center;
+  text-align: center;
+  width: auto;
+}
+
+.series-btns p{
+  /* color: #27ae60; */
+  color: tomato;
+  font-weight: bold;
+}
+
+@media (max-width: 480px ) {
+    .series-container{
+      width: auto;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .series-item{
+      width: auto;
+      margin-right: 35px;
+      
+    }
+
+    .series-container h1{
+      font-size: 1.9em;
+      font-family: 'Acherus Militant 1', sans-serif;
+    }
+}

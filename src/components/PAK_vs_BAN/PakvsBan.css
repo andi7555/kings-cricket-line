@@ -1,0 +1,406 @@
+/* .app-container {
+  display: flex;
+  flex-direction: flex; 
+  gap: 20px; 
+ 
+  background-color: #0f0f0f; 
+    width: 100%;
+    min-height: 300px;
+    box-sizing: border-box;
+  align-items: center; 
+ justify-content: center; 
+ flex-wrap: wrap; 
+ border-radius: 20px; 
+ margin-top: 20px;
+ padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 40px;
+    padding-top: 20px;
+ 
+} */
+/* .matches-header {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 20px;
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    display: flex;
+} */
+/* 
+.match-container {
+ 
+  background-color: #fff;
+  color: black;
+  border-radius: 10px;
+  padding: 15px;
+  font-family: sans-serif;
+  width: 460px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+} */
+
+/* .match-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: black;
+  margin-bottom: 10px;
+} */
+/* 
+.series {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 60%; 
+} */
+/* 
+.score-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+} */
+/* 
+.team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1; 
+} */
+/* 
+.flag {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-bottom: 5px;
+  object-fit: cover; 
+  border: 1px solid #333; 
+} */
+/* 
+.team-name {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 2px;
+  text-align: center; 
+} */
+/* 
+.score {
+  display: flex;
+  align-items: baseline;
+} */
+/* 
+.runs {
+  font-size: 1.5rem;
+  font-weight: bold;
+} */
+/* 
+.wickets {
+  font-size: 1.1rem;
+  color: #ff4d4d; 
+  margin-left: 3px;
+} */
+/* 
+.overs {
+  font-size: 0.75rem;
+  color: black;
+  margin-top: 2px; 
+} */
+/* 
+.live-badge {
+  background-color: #ff4d4d;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  white-space: nowrap; 
+} */
+/* 
+.result-status {
+  background-color: #e0e0e0; 
+  color: tomato;
+  padding: 8px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 0.85rem;
+  text-align: center;
+  line-height: 1.2; 
+  white-space: normal; 
+  max-width: 100px; 
+} */
+/* 
+.match-details {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: #ccc;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #333; 
+} */
+/* 
+.t20-tag {
+  background-color: #ff4d4d;
+  color: #fff;
+  padding: 3px 8px;
+  border-radius: 3px;
+  font-size: 0.7rem;
+} */
+
+
+/*-------------responsive design------------*/
+
+.app-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  background-color: #0f0f0f;
+  width: 100%;
+  min-height: 300px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-radius: 20px;
+  margin-top: 20px;
+  padding: 20px 30px 40px;
+}
+
+.matches-header {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 20px;
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.match-container {
+  background-color: #fff;
+  color: black;
+  border-radius: 10px;
+  padding: 15px;
+  font-family: sans-serif;
+  width: 460px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+}
+
+.match-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.series {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 60%;
+}
+
+.score-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.flag {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-bottom: 5px;
+  object-fit: cover;
+  border: 1px solid #333;
+}
+
+.team-name {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 2px;
+  text-align: center;
+}
+
+.score {
+  display: flex;
+  align-items: baseline;
+}
+
+.runs {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.wickets {
+  font-size: 1.1rem;
+  color: #ff4d4d;
+  margin-left: 3px;
+}
+
+.overs {
+  font-size: 0.75rem;
+  color: black;
+  margin-top: 2px;
+}
+
+.live-badge {
+  background-color: #ff4d4d;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.result-status {
+  background-color: #e0e0e0;
+  color: tomato;
+  padding: 8px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 0.85rem;
+  text-align: center;
+  line-height: 1.2;
+  white-space: normal;
+  max-width: 100px;
+}
+
+.match-details {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: #666;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #ddd;
+}
+
+.t20-tag {
+  background-color: #ff4d4d;
+  color: #fff;
+  padding: 3px 8px;
+  border-radius: 3px;
+  font-size: 0.7rem;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+  .match-container {
+    width: 400px;
+  }
+}
+
+@media (max-width: 992px) {
+  .match-container {
+    width: 350px;
+  }
+  
+  .team-name {
+    font-size: 0.9rem;
+  }
+  
+  .runs {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .app-container {
+    padding: 15px;
+  }
+  
+  .match-container {
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .matches-header {
+    font-size: 1.3rem;
+  }
+  .result-status{
+    display: flex;
+  }
+}
+
+@media (max-width: 478px) {
+  .score-card {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .team {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    align-items: center;
+  }
+  
+  .flag {
+    margin-bottom: 0;
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+  }
+  
+  .team-name {
+    text-align: left;
+    flex-grow: 1;
+  }
+  
+  .t20-tag{
+    text-align: center;
+  }
+  .location{
+    text-align: center;
+  }
+  .score {
+    margin-left: auto;
+  }
+  
+  .match-info, .match-details {
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .series {
+    max-width: 100%;
+    white-space: normal;
+  }
+}
+
+@media (max-width: 425px) {
+  .live-badge, .result-status {
+    padding: 5px 8px;
+    font-size: 0.8rem;
+    
+  }
+  
+  .result-status{
+    align-items: center;
+    display: flex;
+  }
+  .t20-tag {
+    font-size: 0.6rem;
+  }
+  
+  .matches-header {
+    font-size: 1.1rem;
+  }
+}

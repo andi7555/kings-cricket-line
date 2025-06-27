@@ -1,0 +1,320 @@
+/* 
+.table-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+  margin: 20px auto; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #0d0d0d; 
+  padding: 25px;
+  border: 1px solid aqua; 
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6); 
+  max-width: 900px; 
+  
+}
+
+h2 {
+  color: #f0f0f0; 
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 1.8em;
+  font-weight: 600;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #1a1a1a; 
+  border-radius: 8px;
+  overflow: hidden; 
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); 
+}
+
+th, td {
+  padding: 14px 18px; 
+  text-align: left;
+  color: #e0e0e0; 
+  border-bottom: 1px solid #2a2a2a; 
+}
+
+th {
+  background-color: #262626; 
+  color: #ffffff; 
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.85em;
+  letter-spacing: 0.7px;
+}
+
+
+tr:nth-child(even) {
+  background-color: #1a1a1a; 
+}
+
+tr:hover {
+  background-color: #2f2f2f; 
+  cursor: default; 
+}
+
+
+.team-cell {
+  display: flex; 
+  align-items: center; 
+  gap: 10px;
+}
+
+.team-flag {
+  width: 24px; 
+  height: 24px;
+  border-radius: 50%; 
+  object-fit: cover; 
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.series-btns {
+  display: flex; 
+  justify-content: center; 
+  gap: 15px; 
+  margin-top: 20px;
+}
+
+.tab-btn{
+  background-color: #007bff; 
+  color: white; 
+  border: 1px solid white; 
+  padding: 10px 20px; 
+  border-radius: 20px; 
+  cursor: pointer; 
+  font-size: 1em;
+  gap: 10px;
+}
+.tab-btn:hover {
+  background-color: #e0e0e0;
+  color: #000; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+ */
+
+
+
+
+ /* <!-------Responsive Design--------> */
+
+ .table-container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0d0d0d;
+    padding: 25px;
+    border: 1px solid aqua;
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+    max-width: 900px;
+}
+
+h2 {
+    color: #f0f0f0;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 1.8em;
+    font-weight: 600;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+th,
+td {
+    padding: 14px 18px;
+    text-align: left;
+    color: #e0e0e0;
+    border-bottom: 1px solid #2a2a2a;
+}
+
+th {
+    background-color: #262626;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.85em;
+    letter-spacing: 0.7px;
+}
+
+tr:nth-child(even) {
+    background-color: #1a1a1a;
+}
+
+tr:hover {
+    background-color: #2f2f2f;
+    cursor: default;
+}
+
+.team-cell {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.team-flag {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.series-btns {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+    flex-wrap: wrap; /* Allows buttons to wrap on smaller screens */
+}
+
+.tab-btn {
+    background-color: #007bff;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1em;
+    /* `gap: 10px;` is not valid for buttons themselves, it's for flex containers */
+    /* If you meant to add space between text and an icon within the button,
+       you'd need to make the button a flex container and apply gap there. */
+    /* For spacing between buttons, use the `gap` property on `.series-btns` */
+}
+
+.tab-btn:hover {
+    background-color: #e0e0e0;
+    color: #000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.Links-tab{
+    /* padding-bottom: 15px; */
+    padding-top: 15px;
+    display: flex;
+     flex-direction: column;
+     align-items: center;
+     text-align: center;
+}
+
+.act-btn{
+    background-color: #000;
+    border:1px solid aqua ;
+    font-size: 1em;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: white;
+
+   
+   
+}
+.act-btn:hover{
+    background-color: #72fdca;
+    border: 2px solide #72fdca;
+}
+
+/* --- Media Queries for Responsiveness --- */
+
+@media (max-width: 768px) {
+
+    .table-container {
+        padding: 20px; 
+        margin: 15px auto; 
+        border-radius: 15px; 
+    }
+
+    h2 {
+        font-size: 1.6em; 
+        margin-bottom: 25px;
+    }
+
+    table {
+        /* Tables can be tricky; `overflow-x: auto` on a wrapper is usually best */
+        display: block; /* Allows table to be scrolled horizontally if needed */
+        width: 100%;
+        overflow-x: auto; /* Enable horizontal scrolling for the table */
+        white-space: nowrap; /* Prevent content from wrapping inside cells */
+    }
+
+    th,
+    td {
+        padding: 10px 12px; /* Reduce table cell padding */
+        font-size: 0.9em; /* Smaller text in table cells */
+    }
+
+    th {
+        font-size: 0.8em; /* Smaller header text */
+    }
+
+    .team-flag {
+        width: 20px; /* Smaller flag size */
+        height: 20px;
+    }
+
+    .series-btns {
+        flex-direction: column; /* Stack buttons vertically */
+        align-items: center; /* Center stacked buttons */
+        gap: 10px; /* Reduce gap between stacked buttons */
+    }
+
+    .tab-btn {
+        padding: 8px 15px; /* Adjust button padding */
+        font-size: 0.9em; /* Smaller button text */
+        width: 80%; /* Make buttons take more width when stacked */
+        max-width: 200px; /* Limit max width for stacked buttons */
+        text-align: center; /* Center button text */
+    }
+}
+
+
+@media (max-width: 480px) {
+    .table-container {
+        padding: 15px;
+        margin: 10px auto;
+        border-radius: 10px;
+    }
+
+    h2 {
+        font-size: 1.4em;
+        margin-bottom: 20px;
+    }
+
+    th,
+    td {
+        padding: 10px auto;
+        font-size: 0.8em;
+    }
+
+    th {
+        font-size: 0.75em;
+    }
+
+    .team-flag {
+        width: 18px;
+        height: 18px;
+    }
+
+    .series-btns {
+        gap: 8px;
+    }
+
+    .tab-btn {
+        padding: 7px 12px;
+        font-size: 0.85em;
+        width: 90%;
+    }
+}

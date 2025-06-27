@@ -1,0 +1,51 @@
+/* DateCard.css */
+
+.date-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0; 
+    /* width: calc(100% / 7 - 10px);  */
+    width: 80px; /* Fixed width for each date card */
+    text-align: center;
+    border-radius: 8px;
+    transition: background-color 0.2s ease-in-out;
+    gap: 10px;
+}
+
+.date-card:hover {
+    background-color: rgba(255, 255, 255, 0.598); 
+    backdrop-filter: blur;
+}
+
+.date-number {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    color: #f0f0f0; /* White for the number */
+}
+
+.day-of-week {
+    font-size: 0.9em;
+    text-transform: uppercase;
+    color: white; /* Lighter grey for the day */
+    align-items: center;
+    text-align: center;
+    margin-top: 2px;
+    
+}
+
+/* Optional: Styling for today's date */
+.date-card.today {
+    background-color: #6bf7bf; /* Orange background for today */
+    color: #fff; /* White text for today */
+    
+}
+
+.date-card.today .date-number,
+.date-card.today .day-of-week {
+    color: white; /* Ensure text inside today's card is white */
+    
+}

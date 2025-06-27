@@ -1,0 +1,13 @@
+
+@import url(https://db.onlinewebfonts.com/c/cde2f7037e8250f82fc6105ff9a60051?family=Bridge+Type+Regular);
+
+
+@font-face {
+    font-family: "Bridge Type Regular";
+    src: url("https://db.onlinewebfonts.com/t/cde2f7037e8250f82fc6105ff9a60051.eot");
+    src: url("https://db.onlinewebfonts.com/t/cde2f7037e8250f82fc6105ff9a60051.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/cde2f7037e8250f82fc6105ff9a60051.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/cde2f7037e8250f82fc6105ff9a60051.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/cde2f7037e8250f82fc6105ff9a60051.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/cde2f7037e8250f82fc6105ff9a60051.svg#Bridge Type Regular")format("svg");
+}

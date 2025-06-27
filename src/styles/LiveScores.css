@@ -1,0 +1,205 @@
+/* 
+.live-scores-container {
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+  gap: 20px; 
+  padding: 20px;
+  background-color: #f0f2f5;
+  font-family: Arial, sans-serif;
+  border-radius: 20px;
+  margin-top: 20px;
+  box-sizing: border-box;
+  
+}
+
+
+.live-score-card {
+  background-color: white;
+  display: flex;
+  flex-direction: wrap;
+  border-radius: 8px;
+  justify-items:center;
+  align-items: center;
+
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+  margin: 10px;
+  height: 170px ;
+  width: 600px;
+} */
+/* 
+.live-score-card:hover {
+  transform: translateY(-10px); 
+} */
+/* 
+.live-score-card h2 {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.live-score-card p {
+  font-size: 1em;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.live-score-card p:first-of-type {
+  font-weight: bold;
+  color: #007bff; 
+}
+
+.live-score-card .score {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #28a745; 
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.live-score-card .status {
+  font-style: italic;
+  color: #6c757d; 
+}
+
+.live-score-card .result {
+  font-weight: bold;
+  color: #dc3545; 
+  margin-top: 10px;
+}
+
+.live-score-card .venue {
+  font-size: 0.9em;
+  color: #888;
+  margin-top: 15px;
+}  */
+
+
+
+
+
+
+
+
+
+
+
+/* LiveScores.css */
+
+.live-scores-container {
+  display:grid;
+   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+
+  gap: 40px;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 20px;
+  background-color: black;
+  /* margin-top: 5px; */
+  border-radius: 20px;
+  font-family: 'Acherus Militant 1', sans-serif;
+}
+/* 
+.live-sores-heading h1{
+  display: flex;
+ 
+  border-top-right-radius:40px ;
+  border-bottom-right-radius: 40px;
+  color:#e5e3e3 ;
+  text-align: center  ;
+} */
+
+
+.live-scores-container h1{
+  display: flex;
+    background-color: #27ae60;
+   border-top-right-radius: 40px;
+   border-bottom-right-radius:40px ;
+   align-items: center;
+   text-align: center;
+   font-family: 'Acherus Militant 1', sans-serif;
+   color: #e5e3e3;
+  
+}
+.live-scores-container h1:hover{
+   box-shadow: 4px 4px 10px aqua;
+}
+
+.live-score-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+}
+
+.live-score-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 5px 12px 0px aqua;
+}
+
+.live-score-card h2 {
+  color: #333;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #eee;
+}
+
+.live-score-card p {
+  margin: 8px 0;
+  font-size: 0.9rem;
+  color: #555;
+  text-align: center;
+}
+
+.live-score-card .score {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #2c3e50;
+  margin: 12px 0;
+   font-family: 'Acherus Militant 1', sans-serif;
+   text-align: center;
+}
+
+.live-score-card .status {
+  font-style: italic;
+  color: white;
+
+  background-color: #e74c3c;
+  border-radius: 50px;
+}
+
+.live-score-card .result {
+  font-weight: bold;
+  color: #27ae60;
+  text-align: center;
+}
+
+.live-score-card .venue {
+  color: #7f8c8d;
+  font-size: 0.8rem;
+  text-align: center ;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .live-scores-container {
+    grid-template-columns: 1fr;
+    margin-top: 20px;
+  }
+  
+  .live-score-card p{
+    text-align: center;
+  }
+}
+
+@media  (max-width:468px) {
+  .live-scores-container h1{
+    align-items: center;
+    text-align: center;
+  }
+  
+}

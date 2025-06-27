@@ -1,0 +1,371 @@
+/* src/components/Footer.css
+
+.footer-container {
+    background-color: #1b1818; 
+    color: white; 
+    padding: 40px 20px;
+    font-family: Arial, sans-serif; 
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
+.footer-content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    max-height: auto;
+    margin: 0 auto;
+    padding-bottom: 20px; 
+}
+
+.footer-section {
+    flex: 1 1 280px;
+    margin-bottom: 30px; 
+    padding: 0 15px;
+}
+
+.footer-about {
+    flex: 1 1 350px; 
+}
+
+.footer-logo {
+    height: 70px; 
+    margin-bottom: 15px;
+    border-radius: 100px;
+}
+
+.footer-description {
+    font-size: 0.95em;
+    line-height: 1.6;
+    max-width: 400px; 
+}
+
+.footer-heading {
+    color: aqua; 
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+
+.footer-section-group {
+    display: flex;
+    flex: 2 1 600px; 
+    justify-content: space-around;
+    flex-wrap: wrap; 
+}
+
+.footer-app-link {
+    display: flex;
+    align-items: center;
+    color: #f0f0f0;
+    text-decoration: none;
+    margin-bottom: 15px;
+    font-size: 0.95em;
+    transition: color 0.3s ease;
+}
+
+.footer-app-link:hover {
+    color: #ffcccc; 
+}
+
+.footer-app-icon {
+    width: 24px; 
+    height: 24px;
+    margin-right: 10px;
+}
+
+
+.footer-quick-link {
+    color: #f0f0f0;
+    text-decoration: none;
+    display: block; 
+    margin-bottom: 10px;
+    font-size: 0.95em;
+    cursor: pointer; 
+    transition: color 0.3s ease;
+}
+
+.footer-quick-link:hover {
+    color: #ffcccc; 
+    text-decoration: none;
+}
+
+.footer-contact-info {
+    font-size: 0.95em;
+    margin-bottom: 8px;
+}
+
+.footer-divider {
+    border: none;
+    border-top: 1px solid #63f8d5; 
+    margin: 30px auto;
+    max-width: 1200px;
+}
+
+.footer-copyright {
+    text-align: center;
+    font-size: 17px;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+
+}
+
+.footer-copyright .footer-quick-link {
+    display: inline; 
+    margin: 0 5px; 
+    outline: none;
+    text-underline-offset: none; 
+    text-decoration: none; 
+}
+
+
+@media (max-width: 768px) {
+    .footer-content-wrapper {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .footer-section {
+        width: 100%; 
+        text-align: center;
+        padding: 0;
+    }
+
+    .footer-about,
+    .footer-section-group {
+        width: 100%;
+        text-align: center; 
+    }
+
+    .footer-logo {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footer-description {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .footer-section-group {
+        flex-direction: column;
+        align-items: center;
+    }
+} */
+
+
+.footer-container {
+    background-color: #1a1a1a; 
+    color: #f0f0f0;
+    padding: 60px 40px; 
+    font-family: Arial, sans-serif;
+    text-align: center; 
+    margin-top: 20px;
+    border-radius: 20px;
+    
+}
+
+.footer-content-wrapper {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    max-width: 1200px;
+    margin: 0 auto; 
+    gap: 40px; 
+}
+
+.footer-section {
+    flex: 1; 
+    min-width: 250px;
+    text-align: left;
+}
+
+.footer-section-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex: 2; 
+    gap: 30px; 
+}
+
+.footer-logo {
+    max-width: 130px;
+    height: auto; 
+    margin-bottom: 15px;
+    border-radius: 100px;
+    align-items: center;
+}
+
+.footer-description {
+    font-size: 0.95em;
+    line-height: 1.6;
+    color: #cccccc;
+}
+
+.footer-heading {
+    font-size: 1.3em;
+    color: #75facb; 
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 5px; 
+}
+
+/* Underline effect for headings */
+.footer-heading::after {
+    content: '';
+    position:absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px; 
+    height: 3px;
+    background-color: #75facb;
+    border-radius: 2px;
+    
+}
+
+/* Styles for links within "Get The App" and "Quick Links" sections */
+/* Assuming AppDownloadLink and QuickLink components render <a> tags or similar clickable elements */
+.footer-get-app a,
+.footer-quick-links a {
+    margin-bottom: 10px;
+    display: block; 
+    color: #f0f0f0;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-get-app a:hover,
+.footer-quick-links a:hover {
+    color: #75facb; 
+    /* cursor: pointer; */
+}
+
+.footer-quick-links:hover{
+   color: #75facb;
+   /* cursor: pointer; */
+}
+.footer-contact-info {
+    font-size: 0.95em;
+    margin-bottom: 8px;
+    color: #cccccc;
+}
+
+.footer-divider {
+    border: none;
+    border-top: 1px solid #726f6f; 
+    margin: 50px auto 30px auto; 
+    max-width: 1200px; 
+}
+
+.footer-copyright {
+    font-size: 0.95em;
+    color: #d3d0d0;
+    text-align: center;
+}
+
+/* Styles for links within the copyright text */
+.footer-copyright a {
+    color: #aaaaaa;
+    text-decoration: none;
+    margin: 0 5px; 
+    transition: color 0.2s ease;
+}
+
+.footer-copyright a:hover {
+    color: #28a745;
+}
+
+
+@media (max-width: 1024px) {
+    .footer-content-wrapper {
+        gap: 30px; 
+    }
+
+    .footer-section {
+        min-width: 200px; 
+    }
+
+    .footer-section-group {
+        flex-direction: column; 
+        flex: auto; 
+        align-items: flex-start;
+        gap: 20px; 
+    }
+}
+/* For screens smaller than 768px (e.g., tablets in portrait, larger phones) */
+@media (max-width: 768px) {
+    .footer-container {
+        padding: 40px 20px; 
+        margin-top: 100px;
+    }
+
+    .footer-content-wrapper {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center; 
+    }
+
+    .footer-section {
+        width: 100%;
+        text-align: center; 
+    }
+
+    .footer-logo {
+        margin-left: auto;
+        margin-right: auto; 
+    }
+
+    .footer-heading {
+        font-size: 1.2em; 
+        margin-bottom: 15px;
+    }
+
+    /* Centers the underline for headings when the text is centered */
+    .footer-heading::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .footer-section-group {
+        width: 100%; 
+        align-items: center;
+    }
+
+    .footer-divider {
+        margin: 30px auto 20px auto; 
+    }
+}
+
+/* For screens smaller than 480px (e.g., smaller phones) */
+@media (max-width: 480px) {
+    .footer-container {
+        padding: 30px 15px; 
+        align-items: center;
+    }
+
+    .footer-description,
+    .footer-contact-info,
+    .footer-copyright {
+        font-size: 0.8em; 
+    }
+
+    .footer-heading {
+        font-size: 1.1em; 
+    }
+
+    .footer-section-group {
+        gap: 15px; 
+    }
+
+    .footer-copyright p {
+        line-height: 1.5;
+    }
+
+    .footer-copyright a {
+        display: block; 
+        margin: 5px 0; 
+    }
+}

@@ -1,0 +1,264 @@
+:root{
+  /* background: linear-gradient(to right, #af89f5, #8edeec); */
+  background: linear-gradient(to right, #00BFFF, #FFD700);
+}
+
+
+.App {
+  /* font-family:'Poppins', 'Poppins Fallback', sans-serif; */
+  font-family: Acherus militant;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* background-color: #f0f2f5; */
+  /* background: linear-gradient(to right, #af89f5, #8edeec); */
+  background: linear-gradient(to right, #00BFFF, #FFD700);
+   background: linear-gradient(to right, #00bfff, #ffd700);
+  backdrop-filter: blur(50px);
+  color: #333;
+  min-height: 100vh;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Base Navbar Styles */
+ .navbar {
+  background-color: black;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  height: 60px;
+   position: sticky;
+    top: 0px;
+    z-index: 100;
+    backdrop-filter: blur(10px);
+    
+}
+
+.navbar .logo {
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+  color: aqua;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  transition: color 0.6s ease;
+  padding-left: 20px;
+  font-family: 'Acherus Militant 1', sans-serif;
+}
+
+.navbar h1 {
+  align-items: center;
+  text-align: center;
+  display: flex;
+  gap: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #12dbb6;
+  
+} 
+
+.me-btn{
+  font-size: 30px;
+}
+.me-btn:hover{
+  color:#73fdd8;
+}
+
+.cro-btn{
+  font-size: 30px;
+}
+.cro-btn:hover{
+  color: #73fdd8;
+}
+
+/* Navigation Links */
+ .nav-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 40px;
+  margin-right: 140px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 15px;
+  font-size: 15px;
+  transition: background-color 0.3s ease;
+  border-radius: 20px;
+  
+}
+
+.nav-links a:hover {
+  border-bottom: 3px solid #73fdd8;
+  border-radius: 0px;
+  color: #96ffec;
+  transition-duration: 0.3s;
+}
+
+.nav-links p {
+  margin: 0;
+  font-family: 'Poppins', 'Poppins Fallback', sans-serif;
+  
+} 
+
+/* Hamburger Menu Icon */
+ .hamburger {
+  display: none; 
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 25px;
+  cursor: pointer;
+  z-index: 100; 
+} 
+
+ .hamburger .bar {
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+} 
+
+
+/* <!----------------Responsive Design -------------------------!> */
+
+@media (max-width: 1200px) {
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+  }
+  .nav-links {
+    gap: 25px; 
+    margin-right: 50px;
+  
+  }
+  .nav-links p{
+    font-size: 15px;
+    font-weight: 5px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .navbar {
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 40px; 
+     position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    backdrop-filter: blur(10px);
+  }
+
+  .navbar .logo {
+    font-size: 25px;
+    padding-left: 10px; 
+  }
+  .nav-links p {
+      font-size: 13px;
+      
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    border-radius: 10px; 
+    margin: 0; 
+    padding: 15px;
+    height: auto;
+     position: sticky;
+    top: 0px;
+    z-index: 100;
+    backdrop-filter: blur(10px);
+  }  
+
+  .navbar .logo {
+    font-size: 22px; 
+    padding-left: 0; 
+  
+  }  
+
+    .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    background-color: black;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 99; 
+    border-radius: 0 0 20px 20px; 
+  }
+
+  .nav-links.open {
+    display: flex; 
+  } 
+
+   .nav-links a {
+    padding: 15px;
+    border-radius: 0;
+    /* border-bottom: 1px solid rgba(255, 255, 255, 0.1); */
+  }
+
+  .nav-links a:last-child {
+    border-bottom: none;
+  } 
+
+  .nav-links a:hover {
+    background-color: #1a1a1a;
+    border: none;
+
+    color: #96ffec;
+  }
+}  
+
+/* Hamburger icon animation for open state */
+  .hamburger.open .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.open .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}  
+
+

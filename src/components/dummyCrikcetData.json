@@ -1,0 +1,101 @@
+[
+  {
+    "id": "Match1",
+    "team1": "India",
+    "team2": "Australia",
+    "flag1":"https://cdn-icons-png.flaticon.com/128/10597/10597864.png",
+    "flag2":"https://cdn-icons-png.flaticon.com/128/8363/8363075.png",
+    "score1": "180/4 (20 ov)",
+    "score2": "165/8 (20 ov)",
+    "status": "Match Finished",
+    "result": "India won by 15 runs",
+    "venue": "Narendra Modi stadium, Ahmedabad"
+  },
+  {
+    "id": "Match2",
+    "team1": "England",
+    "team2": "New Zealand",
+    "flag1":"https://redwhitecricket.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fdownload%2Fstorage%2Fv1%2Fb%2Ffirestore-redwhite.appspot.com%2Fo%2Fteams%252F1.png%3F%26alt%3Dmedia&w=256&q=75",
+    "flag2":"https://cdn-icons-png.flaticon.com/128/323/323367.png",
+    "score1": "120/2 (10.3 ov)",
+    "score2": "-",
+    "status": "Live",
+    "result": "England needs 40 runs in 57 balls",
+    "venue": "Lord's, London"
+  },
+  {
+    "id": "Match3",
+    "team1": "Pakistan",
+    "team2": "South Africa",
+    "flag1":"https://cdn-icons-png.flaticon.com/128/13980/13980480.png",
+    "flag2":"https://cdn-icons-png.flaticon.com/128/197/197562.png",
+    "score1": "95/5 (15 ov)",
+    "score2": "-",
+    "status": "Live",
+    "result": "South Africa needs 60 runs in 30 balls",
+    "venue": "Gaddafi Stadium, Lahore"
+  },
+  {
+    "id": "Match4",
+    "team1": "West Indies",
+    "team2": "Sri Lanka",
+    "flag1":"https://redwhitecricket.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fdownload%2Fstorage%2Fv1%2Fb%2Ffirestore-redwhite.appspot.com%2Fo%2Fteams%252F4.png%3F%26alt%3Dmedia&w=256&q=75",
+    "flag2":"https://cdn-icons-png.flaticon.com/128/11849/11849334.png",
+    "score1": "150/7 (20 ov)",
+    "score2": "152/4 (18 ov)",
+    "date": "22-3-2025",
+    "status": "Metch Finished",
+    "result": "Sri Lanka won by 6 Wicket",
+    "venue": "Pallekele International Cricket Stadium, Kandy"
+  },
+  {
+    "id": "Match5",
+    "team1": "Bangladesh",
+    "team2": "Afghanistan",
+    "flag1":"https://cdn-icons-png.flaticon.com/128/7826/7826304.png",
+    "flag2":"https://cdn-icons-png.flaticon.com/128/11848/11848417.png",
+    "score1": "200/3 (20 ov)",
+    "score2": "180/6 (20 ov)",
+    "date":"24-4-2025",
+    "status": "Match Finished",
+    "result": "Bangladesh won by 20 runs",
+    "venue": "Sher-e-Bangla National Cricket Stadium, Dhaka"
+  },
+  {
+    "id": "Match6",
+    "team1": "Ireland",
+    "team2": "Scotland",
+    "flag1":"https://cdn-icons-png.flaticon.com/128/323/323380.png",
+    "flag2":"https://cdn-icons-png.flaticon.com/128/197/197601.png",
+    "score1": "110/5 (15 ov)",
+    "score2": "-",
+    "status": "Live",
+    "result": "Scotland needs 45 runs in 30 balls",
+    "venue": "Malahide Cricket Club Ground, Dublin"
+  },
+  {
+    "id": "Match7",
+    "team1": "Zimbabwe",
+    "team2": "Nepal",
+    "flag1":"https://cdn-icons-png.flaticon.com/128/13980/13980242.png",
+    "flag2":"https://cdn-icons-png.flaticon.com/128/197/197387.png",
+    "score1": "130/4 (20 ov)",
+    "score2": "-",
+    "status": "Live",
+    "result": "Nepal needs 50 runs in 30 balls",
+    "venue": "Harare Sports Club, Harare"
+  },
+  {
+    "id": "Match8",
+    "team1": "USA",
+    "team2": "Canada",
+    "flag1":"https://cdn-icons-png.flaticon.com/128/197/197484.png",
+    "flag2":"https://cdn-icons-png.flaticon.com/128/16022/16022020.png",
+    "score1": "-",
+    "score2": "-",
+    "status": "Upcoming",
+    "result": "",
+    "venue": ""
+  }
+  
+]
